@@ -61,7 +61,7 @@ export default function Matched({route}) {
                 <Image source={require('../assets/matcheart.png')} style={{alignSelf:'center', marginTop:'20%'}}></Image>
                 <Avatar.Image style={{backgroundColor:"#FFF"}} size={100} source={{uri:avatar}} style={{position:'absolute', zIndex:2, left:'15%', top:'20%'}}/>
                <View>
-               <Text style={{textAlign:'center', color:"#5D4444",fontSize:17, fontFamily:'R', marginTop:'20%', marginLeft:'5%'}}>Send them a message within 24 hours to keep the match! 
+               <Text onPress={()=>navigation.navigate('Chat',{img1:img.toString(), name:name.toString()})} style={{textAlign:'center', color:"#5D4444",fontSize:17, fontFamily:'R', marginTop:'20%', marginLeft:'5%'}}>Send them a message within 24 hours to keep the match! 
 
 Ask a question, complement their sense of humor or eco-friendliness!</Text>
                </View>

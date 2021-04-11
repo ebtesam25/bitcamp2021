@@ -12,6 +12,7 @@ import Food from './src/screens/food';
 import Dishes from './src/screens/dishes';
 import Match from './src/screens/match';
 import Matched from './src/screens/matched';
+import Chat from './src/screens/chat';
 
 
 const Stack = createStackNavigator();
@@ -70,6 +71,11 @@ function MyStack() {
       <Stack.Screen 
         name="Matched" 
         component={Matched} 
+        options={{ headerShown: false}} 
+      />
+     <Stack.Screen 
+        name="Chat" 
+        component={Chat} 
         options={{ headerShown: false}} 
       />
     
