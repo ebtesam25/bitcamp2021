@@ -15,6 +15,7 @@ export default function Signup() {
     const [fontLoaded] = useFonts({
         B: require('../assets/fonts/b.ttf'),
         M: require('../assets/fonts/m.ttf'),
+        R: require('../assets/fonts/m.ttf'),
         S: require('../assets/fonts/s.ttf'),
 
       });
