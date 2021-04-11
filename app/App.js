@@ -6,6 +6,7 @@ import Welcome from './src/screens/welcome';
 import Signin from './src/screens/login';
 import Signup from './src/screens/register';
 import Home from './src/screens/home';
+import Meme from './src/screens/meme';
 
 
 const Stack = createStackNavigator();
@@ -34,6 +35,11 @@ function MyStack() {
       <Stack.Screen 
         name="Home" 
         component={Home} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Meme" 
+        component={Meme} 
         options={{ headerShown: false}} 
       />
     

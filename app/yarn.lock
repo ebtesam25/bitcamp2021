@@ -1865,6 +1865,13 @@
     dequal "^1.0.0"
     isoworker "^0.1.1"
 
+"@react-native-async-storage/async-storage@^1.15.2":
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/@react-native-async-storage/async-storage/-/async-storage-1.15.2.tgz#895898363fbb8f6db477629fd4ba0b013fe27484"
+  integrity sha512-E1SajKtyeLwi6JVfMZQx+I01z3ZvA0/O2e09EVFzU75YK0696S5N2CqeKlxAZQFVSvzh+Jfq0q412Kdkuh+l6A==
+  dependencies:
+    deep-assign "^3.0.0"
+
 "@react-native-community/checkbox@^0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@react-native-community/checkbox/-/checkbox-0.5.7.tgz#ac818de88736acc1a4539188f2d435cf5e845ae1"
@@ -7101,6 +7108,11 @@ react-native-maps@0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.27.1.tgz#2f10cd417bb2fd938c9e015b1c9b6d9b1a44b97f"
   integrity sha512-HygBkZBecTnIVRYrSiLRAvu4OmXOYso/A7c6Cy73HkOh9CgGV8Ap5eBea24tvmFGptjj5Hg8AJ94/YbmWK1Okw==
+
+react-native-mmkv-storage@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/react-native-mmkv-storage/-/react-native-mmkv-storage-0.5.3.tgz#58f30ca921cfd749bd8ca7b7ffc422787db986c1"
+  integrity sha512-6JAD3IYfpdWTiQZWiKSQn4RAjbxVhyziZncvwPY2ToO/o/DiRdW4fce+ZJ755KpfBfG6EcB3is5sX+LXIJqVkA==
 
 react-native-mmkv@^1.1.6:
   version "1.1.6"

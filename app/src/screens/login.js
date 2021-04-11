@@ -5,6 +5,7 @@ import Svg, { Line, Circle } from 'react-native-svg';
 import { Icon } from 'react-native-elements'
 import { useFonts } from 'expo-font';
 import { TextInput } from 'react-native-gesture-handler';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 

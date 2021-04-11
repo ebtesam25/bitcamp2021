@@ -5,6 +5,7 @@ import Svg, { Line, Circle } from 'react-native-svg';
 import { Icon } from 'react-native-elements'
 import { useFonts } from 'expo-font';
 import { TextInput } from 'react-native-gesture-handler';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
@@ -22,7 +23,14 @@ export default function Signup() {
       if (!fontLoaded) {
         return null;
       }
-   
+      const _setName = async () =>{
+            try {
+              await AsyncStorage.setItem('@username', 'Mark')
+            } catch (e) {
+              // saving error
+            }
+          
+      }
     return (
         <View style={styles.container}>
             <View style={{ marginTop: '10%', marginHorizontal:'5%' }}>
@@ -39,7 +47,7 @@ export default function Signup() {
                 <TextInput secureTextEntry placeholder="confirm password" style={{fontFamily:'S', fontSize:20, alignSelf:'center', color:'#F14848', marginTop:'5%',
                 paddingLeft:'5%', textAlign:'left', width:'90%', backgroundColor:'#f7d7d7', borderRadius:20, paddingVertical:'5%', fontWeight:'bold'}} placeholderTextColor="#f55f5f"></TextInput>
             </View>
-            <TouchableOpacity onPress={()=>navigation.navigate('Home')}><View style={{marginTop:'15%', width:'70%', backgroundColor:'#F14848', alignSelf:'center', borderRadius:50}}>
+            <TouchableOpacity onPress={()=>{_setName(); navigation.navigate('Home')}}><View style={{marginTop:'15%', width:'70%', backgroundColor:'#F14848', alignSelf:'center', borderRadius:50}}>
                 <Text style={{fontFamily:'B', color:'#FFF', fontSize:15, paddingVertical:'7.5%', textAlign:'center', fontWeight:'bold'}} >Sign up</Text>
             </View></TouchableOpacity>
            
