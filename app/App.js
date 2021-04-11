@@ -7,6 +7,11 @@ import Signin from './src/screens/login';
 import Signup from './src/screens/register';
 import Home from './src/screens/home';
 import Meme from './src/screens/meme';
+import Carbon from './src/screens/carbon';
+import Food from './src/screens/food';
+import Dishes from './src/screens/dishes';
+import Match from './src/screens/match';
+import Matched from './src/screens/matched';
 
 
 const Stack = createStackNavigator();
@@ -40,6 +45,31 @@ function MyStack() {
       <Stack.Screen 
         name="Meme" 
         component={Meme} 
+        options={{ headerShown: false}} 
+      />
+       <Stack.Screen 
+        name="Carbon" 
+        component={Carbon} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Food" 
+        component={Food} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Dishes" 
+        component={Dishes} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Match" 
+        component={Match} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Matched" 
+        component={Matched} 
         options={{ headerShown: false}} 
       />
     

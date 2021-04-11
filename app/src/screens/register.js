@@ -25,7 +25,9 @@ export default function Signup() {
       }
       const _setName = async () =>{
             try {
-              await AsyncStorage.setItem('@username', 'Mark')
+              await AsyncStorage.setItem('@username', 'Jane')
+              await AsyncStorage.setItem('@avatar', 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+              
             } catch (e) {
               // saving error
             }

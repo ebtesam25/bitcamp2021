@@ -61,14 +61,18 @@ export default function Meme() {
                    </View>
                    <Image source={{uri:meme[pointer].meme}} style={{width:275, height:300, resizeMode:'contain', borderRadius:30, alignSelf:'center', marginTop:'-5%', marginLeft:'-5%'}}></Image>
                    <View style={{alignSelf:'center', flexDirection:'row', display:'flex'}}>
-                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/yes.png')}></Image></TouchableOpacity>
-                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/love.png')}></Image></TouchableOpacity>
-                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/no.png')}></Image></TouchableOpacity>
+                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/yes.png')} style={{width:60, height:60, resizeMode:'contain'}}></Image></TouchableOpacity>
+                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/love.png')} style={{width:70, height:70, resizeMode:'contain'}}></Image></TouchableOpacity>
+                       <TouchableOpacity onPress={()=>_setPointer()}><Image source={require('../assets/no.png')} style={{width:60, height:60, resizeMode:'contain'}}></Image></TouchableOpacity>
                    </View></View>
                </ImageBackground>}
                {pointer==-1 &&
-               <View><Text style={{fontFamily:'S', color:'#6B81CF', width:'80%', alignSelf:'center', fontSize:20, textAlign:'center', marginTop:'20%'}}>Sorry, that's all we have for now! Upload your memes maybe?</Text>
-               
+               <View><Text style={{fontFamily:'S', color:'#6B81CF', width:'80%',height:400, alignSelf:'center', fontSize:20, textAlign:'center', marginTop:'20%'}}>Sorry, that's all we have for now! Upload your memes maybe?</Text>
+               <View style={{flexDirection:'row', display:'flex', position:'absolute', bottom:20, marginHorizontal:'10%'}}>
+                   <TouchableOpacity><Icon name="home" type="entypo" color="#6B81CF" style={{marginRight:'25%'}}></Icon></TouchableOpacity>
+                   <TouchableOpacity><Icon name="chatbubble" type="ionicon" color="#6B81CF" style={{marginRight:'30%'}}></Icon></TouchableOpacity>
+                   <TouchableOpacity><Icon name="user" type="font-awesome" color="#6B81CF" style={{marginRight:'25%'}}></Icon></TouchableOpacity>
+               </View>
                </View>}
                 
             </View>

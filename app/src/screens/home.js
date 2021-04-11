@@ -46,17 +46,17 @@ export default function Home() {
     return (
         <View style={styles.container}>
             <View style={{ marginTop: '20%', marginHorizontal:'5%' }}>
-                <View style={{flexDirection:'row', display:'flex'}}><Image source={require('../assets/logo.png')} style={{height:50, width:50, resizeMode:'contain'}}></Image>
+                <View style={{flexDirection:'row', display:'flex'}}><Image source={require('../assets/logo.png')} style={{height:50, width:50, resizeMode:'contain', marginLeft:'5%'}}></Image>
                 </View>
                 <Text style={{textAlign:'justify', color:"#F14848",fontSize:25, fontFamily:'B', marginHorizontal:'5%', marginTop:'15%'}}>Hey {name}, </Text>
                 <Text style={{textAlign:'justify', color:"#000",fontSize:20, fontFamily:'R', marginHorizontal:'5%', marginTop:'0.5%'}}>What would you like to do today? </Text>
             </View>
             <ScrollView><View style={{marginHorizontal:'2.5%', marginTop:'5%'}}>
                 
-                <TouchableOpacity><Image source={require('../assets/opt0.png')}></Image></TouchableOpacity>
-                <TouchableOpacity onPress={()=>navigation.navigate('Meme')}><Image source={require('../assets/opt3.png')}></Image></TouchableOpacity>
-                <TouchableOpacity><Image source={require('../assets/opt2.png')}></Image></TouchableOpacity>
-                <TouchableOpacity><Image source={require('../assets/opt1.png')}></Image></TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('Match')}><Image source={require('../assets/opt0.png')} style={{width:'90%', height:120, resizeMode:'contain', alignSelf:'center'}}></Image></TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('Meme')}><Image style={{width:'90%', height:120, resizeMode:'contain', alignSelf:'center'}} source={require('../assets/opt3.png')}></Image></TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('Carbon')}><Image style={{width:'90%', height:120, resizeMode:'contain', alignSelf:'center'}} source={require('../assets/opt2.png')}></Image></TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate('Food')}><Image style={{width:'90%', height:120, resizeMode:'contain', alignSelf:'center'}} source={require('../assets/opt1.png')}></Image></TouchableOpacity>
                
                 
             </View></ScrollView>
