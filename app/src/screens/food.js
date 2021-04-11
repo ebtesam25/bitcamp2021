@@ -19,14 +19,11 @@ export default function Food() {
         S: require('../assets/fonts/s.ttf'),
 
       });
-    const [cowmilk,setCowMilk] = useState(false);
-    const [eggs,setEggs] = useState(false);
-    const [peanut,setPeanut] = useState(false);
-    const [fish,setFish] = useState(false);
-    const [wheat,setWheat] = useState(false);
-    const [soy,setSoy] = useState(false);
-    const [shellfish,setShellfish] = useState(false);
-    const [gluten,setGluten] = useState(false);
+    const [vegan,setVegan] = useState(false);
+    const [coffee,setCoffee] = useState(false);
+    const [pastry,setPastry] = useState(false);
+    const [thai,setThai] = useState(false);
+    
       if (!fontLoaded) {
         return null;
       }
@@ -53,10 +50,10 @@ export default function Food() {
                    <Image source={require('../assets/everything.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Everything</Text>
                 </View>
-                <View>
+                <TouchableOpacity onPress={()=>setVegan(!vegan)}><View>
                    <Image source={require('../assets/vegan.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
-                   <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Vegan</Text>
-                </View>
+                   <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12, color:`${vegan?"#000":"#FF7B30"}`}}>Vegan</Text>
+                </View></TouchableOpacity>
                 <View>
                    <Image source={require('../assets/halal.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Halal</Text>
@@ -65,22 +62,22 @@ export default function Food() {
                    <Image source={require('../assets/fastfood.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'7.5%', fontSize:12}}>Fast Food</Text>
                 </View>
-                <View>
+                <TouchableOpacity onPress={()=>setThai(!thai)}><View>
                    <Image source={require('../assets/chinese.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
-                   <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Chinese</Text>
-                </View>
+                   <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12, color:`${thai?"#000":"#FF7B30"}`}}>Chinese</Text>
+                </View></TouchableOpacity>
                 <View>
                    <Image source={require('../assets/thai.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'18%', fontSize:12}}>Thai</Text>
                 </View>
-                <View>
+                <TouchableOpacity onPress={()=>setPastry(!pastry)}><View>
                    <Image source={require('../assets/bakery.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
-                   <Text style={{fontFamily:'M', marginLeft:'13%', fontSize:12}}>Pastry</Text>
-                </View>
-                <View>
+                   <Text style={{fontFamily:'M', marginLeft:'13%', fontSize:12, color:`${pastry?"#000":"#FF7B30"}`}}>Pastry</Text>
+                </View></TouchableOpacity>
+                <TouchableOpacity onPress={()=>setCoffee(!coffee)}><View>
                    <Image source={require('../assets/coffee.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
-                   <Text style={{fontFamily:'M', marginLeft:'12.5%', fontSize:12}}>Coffee</Text>
-                </View>
+                   <Text style={{fontFamily:'M', marginLeft:'12.5%', fontSize:12, color:`${coffee?"#000":"#FF7B30"}`}}>Coffee</Text>
+                </View></TouchableOpacity>
                 <View>
                    <Image source={require('../assets/glutenfree.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Gluten-free</Text>

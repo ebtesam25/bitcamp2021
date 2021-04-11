@@ -65,7 +65,7 @@ export default function Carbon() {
             <Text style={{fontFamily:'S', color:'#6BCF87',marginLeft:'10%', fontSize:20, textAlign:'left', marginTop:'5%'}}>do you carpool?</Text>
             <Chip onPress={() =>{setCarpool(!carpool); setCarpooltext(carpool?"No":"Yes")} } style={{width:'25%', marginLeft:'10%', marginTop:'2.5%', backgroundColor:"#6BCF87"}} textStyle={{fontFamily:'S', fontSize:12, textAlign:'center'}} selectedColor="#FFF"  selected={carpool}>{carpoolText}</Chip>
             <Text style={{fontFamily:'S', color:'#6BCF87',marginLeft:'10%', fontSize:20, textAlign:'left', marginTop:'5%'}}>track driving habits?</Text>
-            <Chip onPress={() =>{setTrack(!track); setTrackText(track?"No":"Yes")} } style={{width:'25%', marginLeft:'10%', marginTop:'2.5%', backgroundColor:"#6BCF87"}} textStyle={{fontFamily:'S', fontSize:12, textAlign:'center'}} selectedColor="#FFF"  selected={track}>{carpoolText}</Chip>
+            <Chip onPress={() =>{setTrack(!track); setTrackText(track?"No":"Yes")} } style={{width:'25%', marginLeft:'10%', marginTop:'2.5%', backgroundColor:"#6BCF87"}} textStyle={{fontFamily:'S', fontSize:12, textAlign:'center'}} selectedColor="#FFF"  selected={track}>{trackText}</Chip>
             
                </View>
                

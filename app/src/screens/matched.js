@@ -52,7 +52,7 @@ export default function Matched({route}) {
             <View style={{ marginTop: '20%', marginHorizontal:'5%' }}>
                 <View style={{flexDirection:'row', display:'flex'}}>
                <TouchableOpacity><Icon name="chevron-left" type="entypo" size={30} color="#F14848" style={{alignSelf:'flex-start'}}></Icon>
-               <Text style={{textAlign:'left', color:"#F14848",fontSize:30, fontFamily:'B', marginTop:'15%'}}>You matched with {name.toString()}!</Text></TouchableOpacity>
+               <Text style={{textAlign:'left', color:"#F14848",fontSize:30, fontFamily:'B', marginTop:'20%', marginLeft:'5%'}}>You matched with {name.toString()}!</Text></TouchableOpacity>
                 </View>
                 
             </View></ImageBackground>    
@@ -61,7 +61,9 @@ export default function Matched({route}) {
                 <Image source={require('../assets/matcheart.png')} style={{alignSelf:'center', marginTop:'20%'}}></Image>
                 <Avatar.Image style={{backgroundColor:"#FFF"}} size={100} source={{uri:avatar}} style={{position:'absolute', zIndex:2, left:'15%', top:'20%'}}/>
                <View>
-               
+               <Text style={{textAlign:'center', color:"#5D4444",fontSize:17, fontFamily:'R', marginTop:'20%', marginLeft:'5%'}}>Send them a message within 24 hours to keep the match! 
+
+Ask a question, complement their sense of humor or eco-friendliness!</Text>
                </View>
                 
             </View>

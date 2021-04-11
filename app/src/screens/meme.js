@@ -26,7 +26,7 @@ export default function Meme() {
         setMeme(memes.memes)
       }, [])
       const _setPointer = () => {
-          if(pointer<meme.length-2){
+          if(pointer<meme.length){
           setPointer(pointer++);
           console.log(pointer);
           }
